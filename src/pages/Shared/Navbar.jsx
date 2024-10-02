@@ -1,79 +1,33 @@
 const Navbar = () => {
   return (
-    <div className="navbar bg-base-100">
-      <div className="navbar-start">
-        <div className="dropdown">
-          <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              className="h-5 w-5"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth="2"
-                d="M4 6h16M4 12h8m-8 6h16"
-              />
-            </svg>
-          </div>
-          <ul
-            tabIndex={0}
-            className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow"
-          >
-            <li>
-              <a>Home</a>
-            </li>
-            <li>
-              <a>Details</a>
-            </li>
-            <li>
-              <a>Booking</a>
-            </li>
-            <li>
-              <a>Profile</a>
-            </li>
-            <li>
-              <a>Dashboard</a>
-            </li>
-            <li>
-              <a>Login</a>
-            </li>
-          </ul>
-        </div>
-        <a className="btn btn-ghost text-xl">Flight Booking</a>
-      </div>
-      <div className="navbar-center hidden lg:flex">
-        <ul className="menu menu-horizontal px-1">
-          <li>
-            <a>Home</a>
-          </li>
-          <li>
-            <a>Details</a>
-          </li>
-          <li>
-            <a>Booking</a>
-          </li>
-          <li>
-            <a>Profile</a>
-          </li>
-          <li>
-            <a>Dashboard</a>
-          </li>
-          <li>
-            <a>Login</a>
-          </li>
-        </ul>
-        <div className="form-control">
-          <input
-            type="text"
-            placeholder="Search"
-            className="input input-bordered w-24 md:w-auto"
-          />
-        </div>
-      </div>
+    <div className="bg-blue-700 navbar justify-center">
+      <ul className="lg:gap-10 md:gap-5 gap-2 lg:text-xl text-sm text-white font-semibold">
+        <img src="/public/fb.png" alt="logo" className=" h-10 ml-[-200px]" />
+        <li>
+          <a>Home</a>
+        </li>
+        <li>
+          <a>Booking</a>
+        </li>
+        <li>
+          <a>Details</a>
+        </li>
+
+        <li>
+          <a>Profile</a>
+        </li>
+        <li>
+          <a>Dashboard</a>
+        </li>
+        <input
+          type="text"
+          placeholder="Search"
+          className="input input-bordered w-24"
+        />
+        <li>
+          <a>Login</a>
+        </li>
+      </ul>
     </div>
   );
 };
